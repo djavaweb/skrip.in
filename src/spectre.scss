@@ -1,0 +1,161 @@
+// Variables and mixins
+@import "variables";
+@import "mixins";
+
+/*! Spectre.css v#{$version} | MIT License | github.com/picturepan2/spectre */
+// Reset and dependencies
+@import "normalize";
+@import "base";
+
+// Elements
+@import "typography";
+@import "asian";
+@import "tables";
+@import "buttons";
+@import "forms";
+@import "labels";
+@import "codes";
+@import "media";
+
+// Layout
+@import "layout";
+@import "navbar";
+
+// Components
+@import "accordions";
+@import "autocomplete";
+@import "avatars";
+@import "badges";
+@import "breadcrumbs";
+@import "bars";
+@import "cards";
+@import "chips";
+@import "dropdowns";
+@import "empty";
+@import "menus";
+@import "modals";
+@import "navs";
+@import "pagination";
+@import "panels";
+@import "popovers";
+@import "steps";
+@import "tabs";
+@import "tiles";
+@import "toasts";
+@import "tooltips";
+
+// Utility classes
+@import "animations";
+@import "utilities";
+
+//Custom skrip.in style
+
+
+//OVERRIDES
+ul {
+	list-style:disc outside;
+}
+ul, ol {
+	margin: 1rem 0 1rem 1rem;
+}
+.modal-container .modal-header {
+	padding-right: 0;
+}
+
+//VARIABLES
+
+
+//Margins
+$margin-desktop-1x: 18px;
+$margin-desktop-2x: 36px;
+$margin-desktop-3x: 54px;
+
+//COLORS
+$unedited-color: #FFCECE;
+$edited-color: #94E1C5;
+
+//Body
+body {
+	background-color: #F9FCFF;
+}
+
+//Topbar
+.topbar {
+	background-color: $primary_color;
+	height: 84px;
+	align-items: center;
+	margin-bottom:$margin-desktop-3x;
+	.btn.btn-link {
+		color:#fff;
+		font-size: .8rem;
+		font-weight:500;
+	}
+	a {
+		color:#fff;
+	}
+}
+
+.navbar .navbar-brand {
+	font-weight:900;
+	font-size:32px;
+	letter-spacing:-1px;
+}
+
+//Main Content
+.main {
+	font-weight:400;
+}
+.templates-item {
+	border-bottom:1px solid rgba(0,0,0, 0.1);
+	padding-top:$margin-desktop-1x;
+	padding-bottom:$margin-desktop-1x;
+	&:first-child {
+		padding-top:0;
+	}
+	&:last-child {
+		border-bottom:0;
+	}
+}
+.templates-item-headline p {
+	margin-bottom:18px;
+}
+.unedited {
+	border-bottom:2px solid $unedited-color
+}
+.edited {
+	border-bottom:2px solid $edited-color;cursor: pointer;
+}
+.unedited, .unedited {
+	cursor: pointer;
+}
+.interaction {
+	font-size: $font-size-sm;
+}
+
+.mt-d1x {
+	margin-top: $margin-desktop-1x;
+}
+.mt-d2x {
+	margin-top: $margin-desktop-2x;
+}
+
+.headline-editor p {
+	font-size:1.2rem;
+}
+
+.headline-formula p{
+	font-family:$mono-font-family;
+	letter-spacing: -0.05rem;
+}
+
+.navbar {
+	position: relative;
+	.off-canvas-panel {
+		position: absolute;
+		left:calc(100% - 50px);
+	}
+}
+
+.off-canvas-sidebar {
+	padding:0.5rem 1.5rem;
+}
