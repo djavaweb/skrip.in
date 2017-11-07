@@ -16,13 +16,13 @@
 	$(document).ready(function(){
 		$('.open-modal').click(function(){
 			$('.modal').addClass('active');
-			$('body').css({'position':'fixed', 'width':'100%'});
-			$('.topbar, .main').css('filter','blur(3px)');
-
+			$('.topbar , .main').css({'filter':'blur(3px)'});
+			$('body').css('overflow', 'hidden');
 		});
 		$('.btn-clear, .btn-close , .modal-overlay').click(function(){
 			$('.modal').removeClass('active');
-			$('.topbar, .main').css('filter','unset');
+			$('.topbar, .main').css({'filter':'unset'});
+			$('body').css('overflow', 'auto');
 		});
 	})
   </script>
