@@ -63,7 +63,7 @@ ul, ol {
 }
 
 //VARIABLES
-
+$line-unit: 28px;
 
 //Margins
 $margin-desktop-1x: 18px;
@@ -84,7 +84,10 @@ body {
 	background-color: $primary_color;
 	height: 84px;
 	align-items: center;
-	margin-bottom:$margin-desktop-3x;
+	position: absolute;
+	width:100%;
+	top:0;
+	transition: height 0.2s;
 	.btn.btn-link {
 		color:#fff;
 		font-size: .8rem;
@@ -92,6 +95,11 @@ body {
 	}
 	a {
 		color:#fff;
+	}
+	&.shrink {
+		height:42px;
+		transition: height 0.3s;
+		position:fixed;
 	}
 }
 
@@ -104,6 +112,7 @@ body {
 //Main Content
 .main {
 	font-weight:400;
+	margin-top:$line-unit*5;
 }
 .templates-item {
 	border-bottom:1px solid rgba(0,0,0, 0.1);
@@ -163,8 +172,6 @@ body {
 .modal:target .modal-overlay, 
 .modal.active .modal-overlay {
 	background-color: rgba(0, 0, 0, 0.2)!important;
-	-webkit-filter: blur(5px);
-  	filter: blur(5px);
 }
 .modal-container {
 	position: relative;

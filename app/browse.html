@@ -14,17 +14,37 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script type="text/javascript">
 	$(document).ready(function(){
+		// Open popup when this class clicked
 		$('.open-modal').click(function(){
 			$('.modal').addClass('active');
 			//$('.topbar , .main').css({'filter':'blur(3px)'});
-			//$('body').css('overflow', 'hidden');
+			$('body').css('overflow', 'hidden');
 		});
+		//Close popup when these classess clicked
 		$('.btn-clear, .btn-close , .modal-overlay').click(function(){
 			$('.modal').removeClass('active');
 			//$('.topbar, .main').css({'filter':'unset'});
-			//$('body').css('overflow', 'auto');
+			$('body').css('overflow', 'auto');
 		});
-	})
+
+		// Animated Sticky Navbar
+		$(function(){
+		 var shrinkHeader = 1;
+		  $(window).scroll(function() {
+		    var scroll = getCurrentScroll();
+		      if ( scroll >= shrinkHeader ) {
+		           $('.topbar').addClass('shrink');
+		        }
+		        else {
+		            $('.topbar').removeClass('shrink');
+		        }
+		  });
+		function getCurrentScroll() {
+		    return window.pageYOffset || document.documentElement.scrollTop;
+		    }
+		});
+	});
+
   </script>
 
 </head>
