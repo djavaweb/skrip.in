@@ -16,6 +16,9 @@
 	$(document).ready(function(){
 		$('.open-modal').click(function(){
 			$('.modal').addClass('active');
+			$('body').css('position','fixed');
+			$('body').css('width','100%');
+
 		});
 		$('.btn-clear, .btn-close , .modal-overlay').click(function(){
 			$('.modal').removeClass('active');
