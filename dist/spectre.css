@@ -3428,7 +3428,7 @@ body
 .topbar.shrink
 {position: fixed; 
 
-    height: 42px; transition: height .3s;
+    height: 56px; transition: height .3s;
 }
 
 .navbar .navbar-brand
