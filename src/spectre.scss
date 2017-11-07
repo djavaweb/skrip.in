@@ -153,11 +153,18 @@ body {
 	.off-canvas-panel {
 		position: absolute;
 		left:calc(100% - 50px);
+		width:auto;
 	}
 }
-
 .off-canvas-sidebar {
 	padding:0.5rem 1.5rem;
+}
+.off-canvas .off-canvas-overlay,
+.modal:target .modal-overlay, 
+.modal.active .modal-overlay {
+	background-color: rgba(0, 0, 0, 0.2)!important;
+	-webkit-filter: blur(5px);
+  	filter: blur(5px);
 }
 .modal-container {
 	position: relative;

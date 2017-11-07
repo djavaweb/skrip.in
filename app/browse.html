@@ -16,12 +16,13 @@
 	$(document).ready(function(){
 		$('.open-modal').click(function(){
 			$('.modal').addClass('active');
-			$('body').css('position','fixed');
-			$('body').css('width','100%');
+			$('body').css({'position':'fixed', 'width':'100%'});
+			$('.topbar, .main').css('filter','blur(3px)');
 
 		});
 		$('.btn-clear, .btn-close , .modal-overlay').click(function(){
 			$('.modal').removeClass('active');
+			$('.topbar, .main').css('filter','unset');
 		});
 	})
   </script>
