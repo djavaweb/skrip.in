@@ -3464,7 +3464,7 @@ body
 
 .unedited
 {
-    border-bottom: 2px solid #ffcece;
+    border-bottom: 2px solid #ffcece !important;
 }
 
 .edited
@@ -3514,6 +3514,11 @@ body
     position: absolute; left: calc(100% - 50px); width: auto;
 }
 
+a.navbar-brand
+{
+    max-width: 134px;
+}
+
 .off-canvas-sidebar
 {
     padding: .5rem 1.5rem;
@@ -3540,4 +3545,40 @@ body
 .modal-container .modal-body
 {
     overflow-y: scroll; /* has to be scroll, not auto */ -webkit-overflow-scrolling: touch;
+}
+
+.off-canvas .off-canvas-toggle
+{
+    top: .1rem !important;
+}
+
+.skripin-input
+{width: 144px; height: 29px; margin-right: 7px; padding: 0 !important; 
+
+    border: 0;
+}
+
+.skripin-input:focus
+{
+    outline: 0;
+}
+
+.skripin-input::-webkit-input-placeholder
+{
+    color: #d6d6d6;
+}
+
+.skripin-input:-ms-input-placeholder
+{
+    color: #d6d6d6;
+}
+
+.skripin-input::-ms-input-placeholder
+{
+    color: #d6d6d6;
+}
+
+.skripin-input::placeholder
+{
+    color: #d6d6d6;
 }
