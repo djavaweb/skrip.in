@@ -96,10 +96,18 @@ body {
 	a {
 		color:#fff;
 	}
+	a.navbar-brand{
+		max-width:134px;
+		transition: max-width 0.1s;
+	}	
 	&.shrink {
 		height:56px;
 		transition: height 0.3s;
 		position:fixed;
+		a.navbar-brand{
+			max-width:88px;
+			transition: max-width 0.3s;
+		}
 	}
 }
 
@@ -165,9 +173,6 @@ body {
 		width:auto;
 	}
 }
-a.navbar-brand{
-	max-width:134px;
-}
 .off-canvas-sidebar {
 	padding:0.5rem 1.5rem;
 }
@@ -195,7 +200,7 @@ a.navbar-brand{
   	-webkit-overflow-scrolling: touch;
 }
 .off-canvas .off-canvas-toggle {
-	top:0.1rem!important;
+	top:-0.1rem!important;
 }
 
 .skripin-input{

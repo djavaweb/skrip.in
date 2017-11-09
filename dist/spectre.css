@@ -3425,10 +3425,20 @@ body
     color: #fff;
 }
 
+.topbar a.navbar-brand
+{
+    max-width: 134px; transition: max-width .1s;
+}
+
 .topbar.shrink
 {position: fixed; 
 
     height: 56px; transition: height .3s;
+}
+
+.topbar.shrink a.navbar-brand
+{
+    max-width: 88px; transition: max-width .3s;
 }
 
 .navbar .navbar-brand
@@ -3514,11 +3524,6 @@ body
     position: absolute; left: calc(100% - 50px); width: auto;
 }
 
-a.navbar-brand
-{
-    max-width: 134px;
-}
-
 .off-canvas-sidebar
 {
     padding: .5rem 1.5rem;
@@ -3549,7 +3554,7 @@ a.navbar-brand
 
 .off-canvas .off-canvas-toggle
 {
-    top: .1rem !important;
+    top: -.1rem !important;
 }
 
 .skripin-input
