@@ -3494,6 +3494,12 @@ body
     font-size: .7rem;
 }
 
+.interaction-checked
+{height: inherit !important; 
+
+    color: #8cd3b9;
+}
+
 .mt-d1x
 {
     margin-top: 18px;

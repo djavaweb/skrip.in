@@ -148,6 +148,10 @@ body {
 .interaction {
 	font-size: $font-size-sm;
 }
+.interaction-checked {
+	color:#8CD3B9;
+	height: inherit!important;
+}
 
 .mt-d1x {
 	margin-top: $margin-desktop-1x;
